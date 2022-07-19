@@ -34,9 +34,9 @@ Docker
 ```
 docker-compose exec web python manage.py migrate
 ```
-- Для загрузки данных (опционально) файлы с данными находятся в разделе static/data
+- Для загрузки данных (опционально)
 ```
-docker-compose exec web python manage.py load_data_to_db
+docker-compose exec web python manage.py loaddata db.json
 ```
 - Создайте пользователя
 ```
